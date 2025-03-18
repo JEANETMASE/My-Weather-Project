@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/index.css">
     <title>Document</title>
@@ -11,36 +17,42 @@
 
 <body>
     <div class="weather">
-        <header></header>
-        <main>
+        <header>
             <form class="search-form" id="search-form">
                 <input type="search" placeholder="Enter your city" required class="search-form-input"
                     id="search-form-input" />
                 <input type="submit" value="Search" required class="search-form-button" />
             </form>
-            <div>
-                <h1 class="weather-app-city" id="city">
-                    Cape Town
-                </h1>
-                <p>
-                    Precipitation: 0%
-                    <br />
-                    Humidity: 79%
-                    <br />
-                    Wind: 26 km/h
-                    <br />
-            </div>
-            <div>
+
+        </header>
+
+
+        <main>
+            <div class="weather-data">
                 <div>
-                    &#9728;
+                    <h1 class="weather-app-city" id="city">
+                        Cape Town
+                    </h1>
+                    <p class="weather-app-details">
+                        Precipitation:<strong>0%</strong>
+                        <br />
+                        Humidity:<strong>79%</strong>
+                        <br />
+                        Wind: <strong>26 km/h</strong>
+                        <br />
+                    </p>
                 </div>
-                <div class="temperature" id="temperature">
-                    18°C
+                <div>
+                    <div>
+                        &#9728;
+                    </div>
+                    <div class="temperature" id="temperature">
+                        18°C
+
+                    </div>
 
                 </div>
-
             </div>
-            </p>
         </main>
         <footer>
             Coded by
